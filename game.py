@@ -1,5 +1,6 @@
 # Click in the righthand window to make it active then use your arrow
 # keys to control the spaceship!
+import ast
 import turtle
 
 screen = turtle.Screen()
@@ -54,4 +55,4 @@ compute_user_input = input("\nType something here to compute: ")
 if not compute_user_input:
     printf("No input")
 else:
-    print("Result: ", eval(compute_user_input))
+    print("Result: ", ast.literal_eval(compute_user_input))
