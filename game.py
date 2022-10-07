@@ -41,7 +41,7 @@ screen.onkey(backward, "Down")
 screen.onkey(left, "Left")
 screen.onkey(right, "Right")
 screen.listen()
-
+pip install --upgrade sentry-sdk
 
 # -*- coding: utf-8 -*-
 
@@ -55,3 +55,13 @@ else:
 # 2*2
 # __import__("os").system("ls")
 # __import__('os').system('rm –rf /')
+import sentry_sdk
+
+sentry_sdk.init(
+    "https://<key>@sentry.io/<project>",
+
+    # Set traces_sample_rate to 1.0 to capture 100%
+    # of transactions for performance monitoring.
+    # We recommend adjusting this value in production.
+    traces_sample_rate=1.0,
+)
