@@ -52,6 +52,3 @@ if not compute_user_input:
 else:
         print ("Result: ", eval(compute_user_input))
 
-# 2*2
-# __import__("os").system("ls")
-# __import__('os').system('rm –rf /')
