@@ -1,5 +1,5 @@
 # Click in the righthand window to make it active then use your arrow
-   # keys to control the spaceship!
+# keys to control the spaceship!
 import turtle
 
 screen = turtle.Screen()
@@ -18,18 +18,23 @@ turtle.shape("rocketship.png")
 move_speed = 10
 turn_speed = 10
 
+
 # these defs control the movement of our "turtle"
 def forward():
-  turtle.forward(move_speed)
+    turtle.forward(move_speed)
+
 
 def backward():
-  turtle.backward(move_speed)
+    turtle.backward(move_speed)
+
 
 def left():
-  turtle.left(turn_speed)
+    turtle.left(turn_speed)
+
 
 def right():
-  turtle.right(turn_speed)
+    turtle.right(turn_speed)
+
 
 turtle.penup()
 turtle.speed(0)
@@ -42,15 +47,14 @@ screen.onkey(left, "Left")
 screen.onkey(right, "Right")
 screen.listen()
 
-
 # -*- coding: utf-8 -*-
 
 # example code snippet py_vuln00: Arbitrary Code Execution:
-compute_user_input = input('\nType something here to compute: ')
+compute_user_input = input("\nType something here to compute: ")
 if not compute_user_input:
-        printf ("No input")
+    printf("No input")
 else:
-        print ("Result: ", eval(compute_user_input))
+    print("Result: ", eval(compute_user_input))
 
 # 2*2
 # __import__("os").system("ls")
