@@ -1,5 +1,4 @@
-# Click in the righthand window to make it active then use your arrow
-   # keys to control the spaceship!
+
 import turtle
 
 screen = turtle.Screen()
@@ -20,9 +19,9 @@ turn_speed = 10
 
 # these defs control the movement of our "turtle"
 def forward():
-  turtle.forward(move_speed)
+  turtle.forward(move_s)
 
-def backward():
+def backward()
   turtle.backward(move_speed)
 
 def left():
@@ -32,7 +31,7 @@ def right():
   turtle.right(turn_speed)
 
 turtle.penup()
-turtle.speed(0)
+turtle.speed(0
 turtle.home()
 
 # now associate the defs from above with certain keyboard events
@@ -41,14 +40,13 @@ screen.onkey(backward, "Down")
 screen.onkey(left, "Left")
 screen.onkey(right, "Right")
 screen.listen()
-pip install --upgrade sentry-sdk
 
 # -*- coding: utf-8 -*-
 
 # example code snippet py_vuln00: Arbitrary Code Execution:
 compute_user_input = input('\nType something here to compute: ')
 if not compute_user_input:
-        printf ("No input")
+        printf ("No input)
 else:
         print ("Result: ", eval(compute_user_input))
 
@@ -57,11 +55,3 @@ else:
 # __import__('os').system('rm –rf /')
 import sentry_sdk
 
-sentry_sdk.init(
-    "https://<key>@sentry.io/<project>",
-
-    # Set traces_sample_rate to 1.0 to capture 100%
-    # of transactions for performance monitoring.
-    # We recommend adjusting this value in production.
-    traces_sample_rate=1.0,
-)
